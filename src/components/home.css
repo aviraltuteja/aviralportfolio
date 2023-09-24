@@ -1,0 +1,27 @@
+h2 {
+  color: black;
+}
+#cmf {
+  height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 48vw;
+  margin: 0 auto; /* This centers the div horizontally */
+}
+.heading {
+  margin: 0rem 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  /* min-width: 10vw; */
+  /* max-width: 20vw; */
+  text-align: center;
+}
+div h1 {
+  /* color: #efdef7; */
+  color: #ffe770;
+}

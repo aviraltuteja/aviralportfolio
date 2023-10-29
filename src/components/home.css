@@ -10,18 +10,55 @@ h2 {
   max-width: 48vw;
   margin: 0 auto; /* This centers the div horizontally */
 }
-.heading {
-  margin: 0rem 1rem;
-  flex-grow: 1;
-  display: flex;
+.column {
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
   height: 100%;
-  /* min-width: 10vw; */
-  /* max-width: 20vw; */
+  width: 33%;
+}
+.uppertext {
+  height: 40%;
+  display: flex;
+  flex-direction: column-reverse;
+  /* justify-content: flex-end; */
+}
+.lowertext {
+  height: 45%;
+  margin-top: 2rem;
+}
+
+.heading {
+  margin: 1rem 1rem;
+
+  height: 5%;
+
   text-align: center;
 }
+
 div h1 {
   /* color: #efdef7; */
   color: #ffe770;
+}
+.column:hover .uppertext p {
+  opacity: 0.9;
+  transition: opacity 0.5s ease-in;
+}
+.column:hover .lowertext p {
+  opacity: 0.9;
+  transition: opacity 0.5s ease-in;
+  transition-delay: 2s;
+}
+
+.column .uppertext p {
+  opacity: 0;
+  transition: opacity 0.35s ease-in;
+  color: #f7effb;
+  text-align: left;
+}
+.column .lowertext p {
+  opacity: 0;
+  transition: opacity 0.35s ease-in;
+  color: #f7effb;
+  text-align: right;
 }

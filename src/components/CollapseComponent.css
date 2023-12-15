@@ -1,0 +1,19 @@
+.mainbox {
+  border: 1px solid black;
+  width: 100%;
+  margin: 0;
+  height: fit-content;
+  border-radius: 10px;
+}
+.headingprojects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  opacity: 75%;
+  background-color: #fae3e3;
+  border-radius: 10px;
+}
+.heading2 {
+  color: black;
+}

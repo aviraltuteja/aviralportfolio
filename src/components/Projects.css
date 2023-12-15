@@ -1,0 +1,14 @@
+.projectcontainer {
+  display: flex;
+  width: 75vw;
+
+  flex-direction: column;
+  /* justify-content: space-around; */
+  margin: 3rem 12vw;
+  align-items: flex-end;
+  border-radius: 10px;
+}
+.collapsecontainer {
+  margin: 1rem 0;
+  width: 100%;
+}

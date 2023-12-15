@@ -55,10 +55,12 @@ div h1 {
   transition: opacity 0.35s ease-in;
   color: #f7effb;
   text-align: left;
+  font-family: var(--font-b);
 }
 .column .lowertext p {
   opacity: 0;
   transition: opacity 0.35s ease-in;
   color: #f7effb;
   text-align: right;
+  font-family: var(--font-b);
 }

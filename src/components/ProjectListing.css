@@ -1,0 +1,19 @@
+.mainpl {
+  background-color: #f7effb;
+  padding: 1rem;
+  border-radius: 10px;
+  height: 100%;
+  opacity: 90%;
+  border-bottom: 1px solid black;
+}
+h3 {
+  display: inline;
+  font-family: var(--font-b);
+}
+h4 {
+  display: inline;
+  font-family: var(--font-b);
+}
+div p {
+  margin: 0.5rem;
+}

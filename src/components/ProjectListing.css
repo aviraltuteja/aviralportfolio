@@ -16,4 +16,6 @@ h4 {
 }
 div p {
   margin: 0.5rem;
+  font-family: var(--font-a);
+  font-size: 0.9rem;
 }

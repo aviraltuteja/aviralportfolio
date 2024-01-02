@@ -13,6 +13,9 @@ body {
   box-shadow: 0px 0px 5px 4px #ce9ce7;
   min-height: 5rem;
   padding-top: 5px;
+  width: 100vw;
+  z-index: 2;
+  position: relative;
 
   /* border-color: whitesmoke; */
 }

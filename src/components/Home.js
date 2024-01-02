@@ -1,8 +1,33 @@
 import React from "react";
 import "./home.css";
 import { motion } from "framer-motion";
+import codebg from "../codebg.png"
+import filmbg from "../filmbg.png"
+import music from "../music.png"
+import { useState } from "react";
 
 const Home = () => {
+  const [filmbgv, setfilmbgv]= useState(false);
+  const filmme = ()=>{
+    setfilmbgv(true)
+  }
+  const filmml = ()=>{
+    setfilmbgv(false)
+  }
+  const [musicbgv, setmusicbgv]= useState(false);
+  const musicme = ()=>{
+    setmusicbgv(true)
+  }
+  const musicml = ()=>{
+    setmusicbgv(false)
+  }
+  const [codebgv, setcodebgv]= useState(false);
+  const codeme = ()=>{
+    setcodebgv(true)
+  }
+  const codeml = ()=>{
+    setcodebgv(false)
+  }
   return (
     <motion.div
       initial={{ x: "100vw" }}
@@ -10,7 +35,11 @@ const Home = () => {
       transition={{ delay: 0.4 }}
     >
       <div id="cmf">
-        <div className="column">
+        <img src={codebg} style={{opacity:codebgv ? 0.1 : 0}} className="imgs codeimg"></img>
+        <img src={filmbg} style={{opacity:filmbgv ? 0.1 : 0}}className="imgs filmbg"/>
+        <img src={music} style={{opacity:musicbgv ? 0.1 : 0}} className="imgs musicbg"></img>
+
+        <motion.div onMouseEnter={codeme} onMouseLeave={codeml} className="column codecol">
           <div className="uppertext">
             <p>
               I am a proficient JavaScript coder with a specialization in MERN
@@ -22,7 +51,7 @@ const Home = () => {
           </div>
 
           <div className="heading">
-            <h1>Coder</h1>
+            <h1 style={{opacity: (filmbgv || musicbgv) ? 0.7 : 1 }}>Coder</h1>
           </div>
           <div className="lowertext">
             <p>
@@ -33,8 +62,8 @@ const Home = () => {
               puzzle I thoroughly enjoy solving.
             </p>
           </div>
-        </div>
-        <div className="column">
+        </motion.div>
+        <motion.div onMouseEnter={filmme} onMouseLeave={filmml} className="column filmcol">
           <div className="uppertext">
             <p>
               As a filmmaker, I take great pride in sharing my vision through
@@ -45,9 +74,9 @@ const Home = () => {
           </div>
 
           <div className="heading">
-            <h1>Filmmaker</h1>
+            <h1 style={{opacity: (codebgv || musicbgv) ? 0.7 : 1 }}>Filmmaker</h1>
           </div>
-          <div className="lowertext">
+          <div className="lowertext musiccol">
             <p>
               From a young age, I found myself enchanted by the world of cinema.
               The magic of storytelling through the lens of a camera was a
@@ -57,8 +86,8 @@ const Home = () => {
               landscapes of human emotion, culture, and experience
             </p>
           </div>
-        </div>
-        <div className="column">
+        </motion.div>
+        <motion.div onMouseEnter={musicme} onMouseLeave={musicml} className="column">
           <div className="uppertext">
             <p>
               In the world of music, my journey began with a profound
@@ -70,7 +99,7 @@ const Home = () => {
           </div>
 
           <div className="heading">
-            <h1>Musician</h1>
+            <h1 style={{opacity: (filmbgv || codebgv) ? 0.7 : 1 }}>Musician</h1>
           </div>
           <div className="lowertext">
             <p>
@@ -82,7 +111,8 @@ const Home = () => {
               explore my own creative depths.
             </p>
           </div>
-        </div>
+        
+      </motion.div>
       </div>
     </motion.div>
   );

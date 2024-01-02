@@ -110,7 +110,7 @@ const Projects = () => {
               indie production house out of Delhi called Barsaati Films and
               played my part in kickstarting a web series titled ‘Almost Woke’.
               Also channeled my efforts during the shoot of the Pilot by being
-              the Script Supervisor on the se
+              the Script Supervisor on the sets.
             </Projectlisting>
           </Collapsecomp>
         </div>

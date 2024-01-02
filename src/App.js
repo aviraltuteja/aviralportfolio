@@ -3,6 +3,7 @@ import Nav from "./components/Navbar";
 import { Button } from "@mui/material";
 import Projects from "./components/Projects";
 import React from "react";
+import waves from "./waves.svg"
 import {
   BrowserRouter,
   Route,
@@ -18,6 +19,7 @@ import {
 import "./App.css";
 
 import { useState, useEffect } from "react";
+import Projectstwo from "./components/Projectstwo";
 function App() {
   const location = useLocation();
 
@@ -39,9 +41,11 @@ function App() {
   };
   return (
     <div className="mainapp">
-      <Nav animate={isAnimationVisible} />
+     
 
-      <div className="cencon">
+       <Nav animate={isAnimationVisible} />
+
+      <div className="cencon"  >
         {isButtonVisible && (
           <Link to="/home">
             <Button
@@ -62,11 +66,14 @@ function App() {
             </Button>
           </Link>
         )}
+            
+
       </div>
       <Routes>
         <Route path="/home" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects" element={<Projectstwo />} />
       </Routes>
+      
     </div>
   );
 }

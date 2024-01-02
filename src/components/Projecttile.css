@@ -1,0 +1,23 @@
+.maintile{
+    width: 18rem;
+    height: 23rem;
+    background-color: white;
+    position: relative;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #089765, #0e5ed7);
+    position: absolute;
+    overflow: hidden;
+    /* z-index: -1; */
+}
+.comtile{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.tileimg{
+    height: 50%;
+}

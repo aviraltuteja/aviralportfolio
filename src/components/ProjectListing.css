@@ -6,11 +6,11 @@
   opacity: 90%;
   border-bottom: 1px solid black;
 }
-h3 {
+.h3head {
   display: inline;
   font-family: var(--font-b);
 }
-h4 {
+.h4head {
   display: inline;
   font-family: var(--font-b);
 }

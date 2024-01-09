@@ -1,6 +1,10 @@
 import "./Projectstwo.css";
 import Projecttile from "./Projecttile";
 import rimg from "../kiwi.svg"
+import codeone from "../code1.png"
+import codetwo from "../code2.png"
+import codethree from "../code3.png"
+
 
 import { useState } from "react";
 
@@ -14,10 +18,10 @@ const Projectstwo = () =>{
         subtitle: "Front End Developer Intern",
         description:
           "During my tenure as a Frontend Development Intern at Kaksha.ai, I implemented advanced React skills, contributing to a live project. This involved seamless integration of React libraries, such as ReactMUI, CodeMirror, ReactPdf, and ReactYoutube. Additionally, I actively collaborated on Python API integration, gaining practical experience in Docker for efficient project deployment and scaling. Becoming proficient in Git operations was instrumental in enabling effective collaboration within the development team. Notably, I demonstrated adaptability in a high-pressure, real-world environment, further solidifying my skills as a dynamic and capable frontend developer.",
-        img: rimg, // Remove the curly braces around rimg
+        img: codeone, // Remove the curly braces around rimg
         link: "www.google.com",
         batch: "Coding",
-        skills: ["Docker", "Material UI", "Github Proficiency", "Python API Integration"],
+        skills: ["Docker", "Material UI", "Git Proficiency", "Python API Integration"],
       },
     {
         title: "Saanjh Matrimonial Services" ,
@@ -29,7 +33,7 @@ const Projectstwo = () =>{
         development of a secure and user-friendly matrimonial platform,
         showcasing my comprehensive skills in both frontend design and
         backend functionality.` ,
-        img: rimg,
+        img: codetwo,
         link:"www.google.com" ,
         batch: "Coding" ,
         skills: ["EJS", "Tokenization", "Authentication", "Unique IDs"]
@@ -44,7 +48,7 @@ const Projectstwo = () =>{
         This experience honed my skills in designing stylish and efficient
         web pages, showcasing my proficiency in utilizing advanced React
         concepts for an engaging user interface.`,
-        img: rimg ,
+        img: codethree ,
         link:"www.google.com" ,
         batch: "Coding"  ,
         skills: ["React Basics", "Advanced CSS", "React Hooks"]
@@ -128,24 +132,24 @@ const Projectstwo = () =>{
     return <div className="twomain">
         
             <div className="tabbar">
-                <div onClick={() => {setValue(1)}} className="tabheaddiv"><h4 className="tabhead">Coding</h4></div>
-                <div onClick={() => {setValue(2)}} className="tabheaddiv"><h4 className="tabhead">Filmmaking</h4></div>
-                <div onClick={() => {setValue(3)}} className="tabheaddiv"><h4 className="tabhead">Music</h4></div>
+                <div onClick={() => {setValue(1)}} className={value === 1 ? "tabheaddiv activetab" : "tabheaddiv"}><h4 className= "tabhead">Coding</h4></div>
+                <div onClick={() => {setValue(2)}} className={value === 2 ? "tabheaddiv activetab" : "tabheaddiv"}><h4 className="tabhead">Filmmaking</h4></div>
+                <div onClick={() => {setValue(3)}} className={value === 3 ? "tabheaddiv activetab" : "tabheaddiv"}><h4 className="tabhead">Music</h4></div>
 
 
             </div>
             <div className="tabcontent">
-                <div style={{visibility: value === 1 ? "visible" : "hidden"}} className="seccontent">
+                <div className={value === 1 ? "seccontent seccontenttrue" : "seccontent"}>
                 {CodingData.map((project,index)=>{
             return <Projecttile data={project} key={index} />
         })}
                 </div>
-                <div style={{visibility: value === 2 ? "visible" : "hidden"}} className="seccontent">
+                <div  className={value === 2 ? "seccontent seccontenttrue" : "seccontent"}>
                 {FilmData.map((project,index)=>{
             return <Projecttile data={project} key={index} />
         })}
                 </div>
-                <div style={{visibility: value === 3 ? "visible" : "hidden"}} className="seccontent">
+                <div  className={value === 3 ? "seccontent seccontenttrue" : "seccontent"}>
                 {MusicData.map((project,index)=>{
             return <Projecttile data={project} key={index} />
         })}

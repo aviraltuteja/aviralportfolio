@@ -19,13 +19,16 @@ const Projecttile = (props)=>{
             </p>
         </motion.div>
         <img src={props.data.img} className="tileimg" alt="Random"/>
-        <h3>{props.data.subtitle}</h3>
-        <h5>{props.data.title}</h5>
+        <div className="tiletext">
+        <h3 className="titlehead">{props.data.subtitle}</h3>
+        <h3 className="subtitlehead">{props.data.title}</h3>
+        <h4 className="skillshead">Skills Acquired</h4>
         {
             props.data.skills.map((skill,index)=>{
-              return  <p key={index}>{skill}</p>
+              return  <p key={index} className="pskills">{skill}</p>
             })
         }
+    </div>
     </motion.div>
 }
 export default Projecttile;

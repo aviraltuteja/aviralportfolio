@@ -11,6 +11,7 @@
 }
 .tabhead{
     font-size: 1.5rem;
+    font-family: var(--font-b);
 }
 .tabheaddiv{
     height: 100%;
@@ -19,6 +20,9 @@
     justify-content: center;
     cursor: pointer;
     align-items: center;
+    flex-grow: 1;
+    border-radius: 8px;
+
 
 }
 .tabbar{
@@ -27,10 +31,16 @@
     height: 3rem;
     align-items: center;
     width: 70%;
+    border-radius: 10px;
+    background-color: white;
 
 }
+.activetab{
+    background-color: #1C5253;
+    color: white;
+   
+}
 .tabcontent{
-    border: 1px solid black;
     width: 100%;
     display: flex;
     height: 30rem;
@@ -38,13 +48,16 @@
     justify-content: center;
 }
 .seccontent{
-    position: absolute;
-    display: flex;
+    /* position: absolute; */
     /* padding: 2rem 5rem; */
-    justify-content: space-between;
-    border: 1px solid orange;
-    width: 50%;
+    width: 100%;
+    display: none;
 }
+.seccontenttrue{
+    display: flex;
+    justify-content: space-around;
+}
+
 @media (max-width:1700px) {
     .twomain{
         width: 60vw;

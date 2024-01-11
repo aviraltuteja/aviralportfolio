@@ -7,9 +7,7 @@ import React from "react";
 import waves from "./waves.svg";
 import { Route, Routes, Link, useLocation } from "react-router-dom";
 import "./App.css";
-import wave from "./wave.svg";
-import pattern from "./pattern.png";
-import wavetop from "./wavetop.svg";
+import Aviral from "./NewAsset.png"
 import wavebg from "./uxieone.png";
 
 import { useState, useEffect } from "react";
@@ -65,17 +63,22 @@ function App() {
             src={wavebg}
             style={{ opacity: "10%", width: "100vw", height: "100vh" }}
           ></img>
+          <div className="textandimage">
           <div className="text-start">
             <h1 className="text-start-head">
               Hi, My name is Aviral and <br />I am a{" "}
               <span className="yellowtext"> MERN Stack Developer.</span>
               <h1 className="text-start-subhead">
-                This portfolio will give you a brief introduction about my
+                This portfolio will give you a brief introduction 
                 <br />
-                professional skills and hobbies.
+                about my professional skills and hobbies.
               </h1>
             </h1>
           </div>
+          <div className="profile-start">
+          <img src={Aviral} className="profile"></img>
+          </div>
+        </div>
         </div>
       )}
 

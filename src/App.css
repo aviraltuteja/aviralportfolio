@@ -12,9 +12,13 @@
   text-align: center;
 }
 .text-start {
-  position: absolute;
-  top: 20vh;
-  right: 20vw;
+  /* top: 20vh;
+  right: 20vw; */
+  margin-left: 2rem;
+}
+.profile-start {
+  /* top: 10vh;
+  left: 35vw; */
 }
 .text-start-head {
   color: #efdef7;
@@ -25,10 +29,25 @@
   font-size: 1.5rem;
   color: #dfbdef;
 }
+.profile{
+  width: 12vw;
+  /* position: absolute;
+  top: 0; */
+}
 .cencon {
   display: flex;
   justify-content: center;
   position: relative;
   top: 47vh;
+}
+.textandimage{
+  position: absolute;
+  top: 15vh;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100vw;
+  padding-left: 2.5vw;
 }
 /* #a64ad3 */

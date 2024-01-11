@@ -1,0 +1,26 @@
+.maincontact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+.headtext {
+  text-align: center;
+  color: #efdef7;
+  line-height: 1.6rem;
+  font-family: var(--font-a);
+}
+.yellowtext {
+  color: #ffe770;
+}
+.headtext2 {
+  color: #dfbdef;
+  text-align: center;
+  font-family: var(--font-a);
+}
+.subheadtext {
+  color: #efdef7;
+  font: var(--font-a);
+  font-weight: 700;
+}

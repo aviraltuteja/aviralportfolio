@@ -1,54 +1,58 @@
-.maintile{
-    width: 18rem;
-    height: 23rem;
-    background-color: white;
-    position: relative;
+.maintile {
+  width: 18rem;
+  height: 23rem;
+  background-color: white;
+  position: relative;
 }
-.overlay{
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(180deg, #DFBDEF, #EFDEF7);
-    position: absolute;
-    overflow: hidden;
-    /* z-index: -1; */
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #dfbdef, #efdef7);
+  position: absolute;
+  overflow: hidden;
+  /* z-index: -1; */
 }
-.comtile{
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.comtile {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
-.tileimg{
-    height: 50%;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-
+.tileimg {
+  height: 47%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  /* object-fit: contain; */
 }
-.titlehead{
-    font-size: .9rem;
-    margin: 0.5rem 0 0 0 ;
-    font-weight: 800;
-    font-family: var(--font-b);
+.tiledesc {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  padding: 2px;
 }
-.subtitlehead{
-    font-size: .9rem;
-    margin: 0;
-    color: #474747;
-    font-family: var(--font-b);
-    margin: 0.5rem 0 0 0 ;
+.titlehead {
+  font-size: 0.9rem;
+  margin: 0.95rem 0 0 0;
+  font-weight: 800;
+  font-family: var(--font-b);
 }
-.skillshead{
-    font-family: var(--font-a);
-    margin : 0.5rem 1rem 0 1rem;
-    font-size: 0.8rem;
-
+.subtitlehead {
+  font-size: 0.9rem;
+  color: #474747;
+  font-family: var(--font-b);
+  margin: 0.25rem 0 0 0;
 }
-.pskills{
-    font-family: var(--font-a);
-    font-size: 0.8rem;
-    margin-left: 1.5rem;
-
+.skillshead {
+  font-family: var(--font-a);
+  margin: 0.65rem 1rem 0 1rem;
+  font-size: 0.85rem;
+  color: #321042;
+  font-weight: bold;
 }
-.tiletext{
-    margin : 0 0 0 1rem;
+.pskills {
+  font-family: var(--font-a);
+  font-size: 0.8rem;
+  margin-left: 1.5rem;
+}
+.tiletext {
+  margin: 0 0 0 1rem;
 }

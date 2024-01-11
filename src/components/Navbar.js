@@ -20,8 +20,8 @@ const Nav = (props) => {
       <Link className="link" to="/projects">
         <h2>Projects</h2>
       </Link>
-      <Link className="link" to="/achievements">
-        <h2>Achievements</h2>
+      <Link className="link" to="/certificates">
+        <h2>Certificates</h2>
       </Link>
       <Link className="link" to="/contact">
         <h2>Contact</h2>

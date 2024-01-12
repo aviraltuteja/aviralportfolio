@@ -64,12 +64,12 @@
   padding-left: 2.5vw;
 }
 /* #a64ad3 */
-@media (max-width: 1700px) {
+@media (max-width: 100px) {
   .profile {
     width: 14vw;
   }
 }
-@media (min-aspect-ratio: 1.8) {
+@media (min-aspect-ratio: 1.8) and (max-width: 1600px) {
   .textandimage {
     top: 8vh;
   }

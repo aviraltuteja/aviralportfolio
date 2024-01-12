@@ -57,7 +57,7 @@ const Contact = () => {
             },
           }}
           component={Link}
-          to="https://drive.google.com/file/d/10HKvwLWuIL5UuOtX27GeFZa3uTMyaDW2/view?usp=sharing" // Full URL including the protocol
+          to="https://drive.google.com/file/d/1T9mWXsqhtyoUeega_f39qzoarmEgkx9e/view?usp=sharing" // Full URL including the protocol
           target="_blank" // Open in a new tab
           rel="noopener noreferrer"
         >
@@ -67,7 +67,7 @@ const Contact = () => {
       <div>
         <h4 className="subheadtext" style={{ margin: "2rem 0 0 0" }}>
           You can mail me at{" "}
-          <span className="yellowtext">aviraltuteja@gmail.com</span> !
+          <a href="mailto:aviraltuteja@gmail.com" className="yellowtext" style={{textDecoration:"None"}}>aviraltuteja@gmail.com</a> !
         </h4>
       </div>
     </div>

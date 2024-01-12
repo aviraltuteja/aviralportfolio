@@ -7,20 +7,20 @@
 }
 .headtext {
   text-align: center;
-  color: #efdef7;
+  color: #e5eff1;
   line-height: 1.6rem;
   font-family: var(--font-a);
 }
 .yellowtext {
-  color: #ffe770;
+  color: #f1e455;
 }
 .headtext2 {
-  color: #dfbdef;
+  color: #bdd6db;
   text-align: center;
   font-family: var(--font-a);
 }
 .subheadtext {
-  color: #efdef7;
+  color: #e5eff1;
   font: var(--font-a);
   font-weight: 700;
 }

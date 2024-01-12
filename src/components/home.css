@@ -57,7 +57,7 @@ h2 {
 .column .uppertext p {
   opacity: 0;
   transition: opacity 0.35s ease-in;
-  color: #f7effb;
+  color: #e4eef1;
   text-align: left;
   font-family: var(--font-a);
   font-size: 1rem;
@@ -66,7 +66,7 @@ h2 {
 .column .lowertext p {
   opacity: 0;
   transition: opacity 0.35s ease-in;
-  color: #f7effb;
+  color: #e4eef1;
   text-align: right;
   font-family: var(--font-a);
   font-size: 1rem;
@@ -91,5 +91,20 @@ h2 {
   .homeheading {
     font-size: 2rem;
     letter-spacing: 1.5px;
+  }
+}
+@media (min-width: 1700px) {
+  .column .uppertext p {
+    font-size: 1.2rem;
+    line-height: calc(1.2rem * 1.3);
+  }
+  .column .lowertext p {
+    font-size: 1.2rem;
+    line-height: calc(1.2rem * 1.3);
+  }
+}
+@media screen and (max-width: 768px) {
+  #cmf {
+    flex-direction: column;
   }
 }

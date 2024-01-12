@@ -44,7 +44,7 @@ const Projectstwo = () => {
       img: codetwo,
       link: "www.google.com",
       batch: "Coding",
-      skills: ["EJS", "Tokenization", "Authentication", "Unique IDs"],
+      skills: ["EJS", "Tokenization", "Authentication", "Routers"],
     },
     {
       title: "Capture Films",

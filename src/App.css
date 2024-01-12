@@ -1,10 +1,20 @@
 .mainapp {
   /* background-image: linear-gradient(180deg, #6e2494, #a64ad3, #6e2494); */
-    /* background-image: linear-gradient(0deg, #605C3C, #3C3B3F); */
-    /* background: -webkit-linear-gradient(to bottom, #605C3C, #3C3B3F);  Chrome 10-25, Safari 5.1-6 */
-    background: #0F2027;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background-image: linear-gradient(0deg, #605C3C, #3C3B3F); */
+  /* background: -webkit-linear-gradient(to bottom, #605C3C, #3C3B3F);  Chrome 10-25, Safari 5.1-6 */
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   /* background: linear-gradient(to right, #16222a, #3a6073); */
   /* background-image: linear-gradient(180deg, #000, #fff); */
@@ -24,13 +34,13 @@ background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/
 }
 
 .text-start-head {
-  color: #eeeeee;
+  color: #f2f7f8;
   font-family: var(--font-a);
 }
 .text-start-subhead {
   font-family: var(--font-a);
   font-size: 1.5rem;
-  color: #cccccc;
+  color: #c9dfe3;
 }
 .profile {
   width: 13vw;
@@ -57,5 +67,48 @@ background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/
 @media (max-width: 1700px) {
   .profile {
     width: 14vw;
+  }
+}
+@media (min-aspect-ratio: 1.8) {
+  .textandimage {
+    top: 8vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.25em; /* You can adjust this value */
+  }
+
+  h2 {
+    font-size: 1.1em; /* You can adjust this value */
+  }
+
+  h3 {
+    font-size: 1em; /* You can adjust this value */
+  }
+
+  h4 {
+    font-size: 0.83em; /* You can adjust this value */
+  }
+
+  h5 {
+    font-size: 0.67em; /* You can adjust this value */
+  }
+
+  p {
+    font-size: 0.6em; /* You can adjust this value */
+  }
+  .text-start-subhead {
+    font-size: 0.9rem;
+  }
+  .profile {
+    width: auto;
+    height: 15vh;
+  }
+  .textandimage {
+    padding: 0;
+  }
+  .butpos {
+    font-size: 1rem;
   }
 }

@@ -1,72 +1,68 @@
-.twomain{
-    display: flex;
-    width: 50vw;
-    /* padding: 10rem 20rem; */
-    height: auto;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-    margin: 5rem 25vw;
-    align-items: center;
-    /* justify-content: space-around; */
+.twomain {
+  display: flex;
+  width: 50vw;
+  /* padding: 10rem 20rem; */
+  height: auto;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  margin: 5rem 25vw;
+  align-items: center;
+  /* justify-content: space-around; */
 }
-.tabhead{
-    font-size: 1.5rem;
-    font-family: var(--font-b);
+.tabhead {
+  font-size: 1.5rem;
+  font-family: var(--font-b);
 }
-.tabheaddiv{
-    height: 100%;
-    width: 33%;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    align-items: center;
-    flex-grow: 1;
-    border-radius: 8px;
-
-
+.tabheaddiv {
+  height: 100%;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  flex-grow: 1;
+  border-radius: 8px;
 }
-.tabbar{
-    display: flex;
-    border: 2px solid black;
-    height: 3rem;
-    align-items: center;
-    width: 70%;
-    border-radius: 10px;
-    background-color: white;
-
+.tabbar {
+  display: flex;
+  border: 2px solid black;
+  height: 3rem;
+  align-items: center;
+  width: 70%;
+  border-radius: 10px;
+  background-color: white;
 }
-.activetab{
-    background-color: #1C5253;
-    color: white;
-   
+.activetab {
+  background-color: #ae3509;
+  color: white;
 }
-.tabcontent{
-    width: 100%;
-    display: flex;
-    height: 30rem;
-    margin-top: 2rem;
-    justify-content: center;
+.tabcontent {
+  width: 100%;
+  display: flex;
+  height: 30rem;
+  margin-top: 2rem;
+  justify-content: center;
 }
-.seccontent{
-    /* position: absolute; */
-    /* padding: 2rem 5rem; */
-    width: 100%;
-    display: none;
+.seccontent {
+  /* position: absolute; */
+  /* padding: 2rem 5rem; */
+  width: 100%;
+  display: none;
 }
-.seccontenttrue{
-    display: flex;
-    justify-content: space-around;
+.seccontenttrue {
+  display: flex;
+  justify-content: space-around;
 }
 
-@media (max-width:1700px) {
-    .twomain{
-        width: 60vw;
-        margin: 5rem 20vw;
-    }
+@media (max-width: 1700px) {
+  .twomain {
+    width: 60vw;
+    margin: 5rem 20vw;
+  }
 }
-@media (max-width:1450px) {
-    .twomain{
-        width: 70vw;
-        margin: 5rem 15vw;
-    }
+@media (max-width: 1450px) {
+  .twomain {
+    width: 70vw;
+    margin: 5rem 15vw;
+  }
 }

@@ -7,7 +7,7 @@ import React from "react";
 import waves from "./waves.svg";
 import { Route, Routes, Link, useLocation } from "react-router-dom";
 import "./App.css";
-import Aviral from "./NewAsset.png"
+import Aviral from "./NewAsset.png";
 import wavebg from "./uxieone.png";
 
 import { useState, useEffect } from "react";
@@ -64,21 +64,21 @@ function App() {
             style={{ opacity: "5%", width: "100vw", height: "100vh" }}
           ></img>
           <div className="textandimage">
-          <div className="text-start">
-            <h1 className="text-start-head">
-              Hi, My name is Aviral and <br />I am a{" "}
-              <span className="yellowtext"> MERN Stack Developer.</span>
-              <h1 className="text-start-subhead">
-                This portfolio will give you a brief introduction 
-                <br />
-                about my professional skills and hobbies.
+            <div className="text-start">
+              <h1 className="text-start-head">
+                Hi, My name is Aviral and <br />I am a{" "}
+                <span className="yellowtext"> MERN Stack Developer.</span>
+                <h1 className="text-start-subhead">
+                  This portfolio will give you a brief introduction
+                  <br />
+                  about my professional skills and hobbies.
+                </h1>
               </h1>
-            </h1>
+            </div>
+            <div className="profile-start">
+              <img src={Aviral} className="profile"></img>
+            </div>
           </div>
-          <div className="profile-start">
-          <img src={Aviral} className="profile"></img>
-          </div>
-        </div>
         </div>
       )}
 
@@ -87,13 +87,13 @@ function App() {
           <Link to="/home">
             <Button
               sx={{
-                color: "#0f0514",
+                color: "#C8DDE4",
                 fontFamily: "var(--font-b)",
                 padding: "5px 10px",
                 fontSize: "1.2rem",
                 "&:hover": {
-                  backgroundColor: "#EBF7FF",
-                  color: "rgb(153, 50, 205)",
+                  backgroundColor: "#E4EFF1",
+                  color: "#223C44",
                 },
               }}
               className="butpos"

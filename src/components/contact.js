@@ -48,12 +48,12 @@ const Contact = () => {
       <div>
         <Button
           sx={{
-            backgroundColor: "#E7CEF3",
-            color: "#571C73",
+            backgroundColor: "#E5EFF1",
+            color: "#2B4950",
             margin: "1rem",
             "&:hover": {
-              backgroundColor: "#EBF7FF",
-              color: "rgb(153, 50, 205)",
+              backgroundColor: "#F2F7F8",
+              color: "#243D42",
             },
           }}
           component={Link}

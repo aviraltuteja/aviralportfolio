@@ -1,5 +1,11 @@
 .mainapp {
-  background-image: linear-gradient(180deg, #6e2494, #a64ad3, #6e2494);
+  /* background-image: linear-gradient(180deg, #6e2494, #a64ad3, #6e2494); */
+    /* background-image: linear-gradient(0deg, #605C3C, #3C3B3F); */
+    /* background: -webkit-linear-gradient(to bottom, #605C3C, #3C3B3F);  Chrome 10-25, Safari 5.1-6 */
+    background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   /* background: linear-gradient(to right, #16222a, #3a6073); */
   /* background-image: linear-gradient(180deg, #000, #fff); */
 
@@ -18,16 +24,16 @@
 }
 
 .text-start-head {
-  color: #efdef7;
+  color: #eeeeee;
   font-family: var(--font-a);
 }
 .text-start-subhead {
   font-family: var(--font-a);
   font-size: 1.5rem;
-  color: #dfbdef;
+  color: #cccccc;
 }
 .profile {
-  width: 12vw;
+  width: 13vw;
   /* position: absolute;
   top: 0; */
 }

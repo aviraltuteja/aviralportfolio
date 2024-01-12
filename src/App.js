@@ -61,7 +61,7 @@ function App() {
         <div style={{ position: "absolute", top: "0" }}>
           <img
             src={wavebg}
-            style={{ opacity: "10%", width: "100vw", height: "100vh" }}
+            style={{ opacity: "5%", width: "100vw", height: "100vh" }}
           ></img>
           <div className="textandimage">
           <div className="text-start">

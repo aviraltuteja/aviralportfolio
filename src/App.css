@@ -55,7 +55,7 @@
 }
 .textandimage {
   position: absolute;
-  top: 15vh;
+  top: 17vh;
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-end;
@@ -71,7 +71,7 @@
 }
 @media (min-aspect-ratio: 1.8) and (max-width: 1600px) {
   .textandimage {
-    top: 8vh;
+    top: 10vh;
   }
 }
 @media screen and (max-width: 768px) {

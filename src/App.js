@@ -7,7 +7,7 @@ import React from "react";
 import waves from "./waves.svg";
 import { Route, Routes, Link, useLocation } from "react-router-dom";
 import "./App.css";
-import Aviral from "./NewAsset.png";
+import Aviral from "./Asset 10.png";
 import wavebg from "./uxieone.png";
 
 import { useState, useEffect } from "react";
